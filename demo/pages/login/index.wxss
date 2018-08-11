@@ -1,0 +1,24 @@
+/* pages/login/index.wxss */
+.title{
+  color: royalblue;
+  text-align: center;
+}
+.account {
+  margin-top: 40rpx;
+  border-bottom: 1rpx solid #1860ff;
+}
+.account input{
+  margin-left: 40rpx;
+  display: inline-block;
+}
+.password{
+  margin-top: 40rpx;
+  border-bottom: 1rpx solid #1860ff;
+}
+.password input{
+  margin-left: 40rpx;
+  display: inline-block
+}
+.login-button{
+  margin-top: 40rpx;
+}
