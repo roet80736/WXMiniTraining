@@ -1,3 +1,4 @@
+const apis = require("../../requests/apis.js")
 Page({
   data: {
     account: '', // 输入的账号
@@ -30,6 +31,17 @@ Page({
       })
       return;
     }
+    apis.login({account, password},(data)=>{
+      console.log("登陆成功")
+      wx.redirectTo({
+        url: '/pages/main/index?result=' + data
+      })
+    },(res)=>{
+      console.log("登陆失败:", res)
+      wx.redirectTo({
+        url: '/pages/main/index?result=' + res
+      })
+    })
 
   }
  
