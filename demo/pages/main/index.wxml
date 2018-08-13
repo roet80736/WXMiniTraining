@@ -1,0 +1,2 @@
+<!--pages/main/index.wxml-->
+<text>登陆返回结果:{{result}}</text>
